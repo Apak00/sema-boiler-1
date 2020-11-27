@@ -1,0 +1,11 @@
+{
+  "extends": ["../../.eslintrc"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "react/require-default-props": "off"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": ["src", "types", "configs"],
+  "compilerOptions": {
+    "module": "esnext",
+    "lib": ["es2015", "dom.iterable", "esnext", "dom"],
+    "jsx": "react",
+    "baseUrl": "./",
+    /* paths - If you configure Snowpack import aliases, add them here. */
+    "paths": {
+      "@src/*": ["./src/*"],
+      "@configs/*": ["./configs/*"],
+      "@api/*": ["./src/api/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@components/*": ["./src/components/*"],
+      "@router/*": ["./src/router/*"],
+      "@store/*": ["./src/store/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@styles/*": ["./src/styles/*"]
+    },
+    /* noEmit - Snowpack builds (emits) files, not tsc. */
+    "noEmit": true,
+    /* Additional Options */
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true
+  }
+}

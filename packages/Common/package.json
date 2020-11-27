@@ -1,0 +1,25 @@
+{
+  "name": "@adesso-modules/common",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "author": "adesso Turkey Front-End Developers",
+  "copyright": "adesso Turkey",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "bootstrap": "yarn run build && echo \"------------------------------------------------------ ✓ @adesso-modules/common: OK.\""
+  },
+  "devDependencies": {
+    "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "@types/node": "^14.11.2",
+    "dotenv": "^8.2.0",
+    "tslib": "^2.0.1"
+  }
+}
